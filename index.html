@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">Calculator</div>   
+        <input type="text" id="ips" class="result" placeholder="00000000">
+        <div class="first-row">
+            <input type="button" id="del" onclick="eqll(del)" value="Del" class="">
+            <input type="button" id="mod" onclick="eqll(mod)" value="%" class="global">
+        </div>
+    <div class="second-row">
+        <input type="button" id="svn" onclick="eqll(svn)" value="7" class="global">
+        <input type="button" id="eit" onclick="eqll(eit)" value="8" class="global">
+        <input type="button" id="nin" onclick="eqll(nin)" value="9" class="global">
+        <input type="button" id="ash" onclick="eqll(ash)" value="/" class="global">
+    </div>
+    <div class="third-row">
+        <input type="button" id="fur" onclick="eqll(fur)" value="4" class="global">
+        <input type="button" id="fiv" onclick="eqll(fiv)" value="5" class="global">
+        <input type="button" id="six" onclick="eqll(six)" value="6" class="global">
+        <input type="button" id="mul" onclick="eqll(mul)" value="X" class="global">
+    </div>
+    <div class="fourth-row">
+        <input type="button" id="one" onclick="eqll(one)" value="1" class="global">
+        <input type="button" id="two" onclick="eqll(two)" value="2" class="global">
+        <input type="button" id="tre" onclick="eqll(tre)" value="3" class="global">
+        <input type="button" id="nus" onclick="eqll(nus)" value="-" class="global">
+    </div>
+    <div class="conflict">
+        <div class="left">
+            <input type="button" id="ero" onclick="eqll(ero)" value="0" class=" big">
+            <input type="button" id="eql" onclick="eqll(eql)" value="=" class=" green white-text big top-margin">
+            <input type="button" id="pls" onclick="eqll(pls)" value="+" class="global grey plus">
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
