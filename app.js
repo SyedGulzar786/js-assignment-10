@@ -15,7 +15,25 @@
     var ero = document.getElementById("ero").value
     var eql = document.getElementById("eql").value
     var pls = document.getElementById("pls").value
-
-    function eqll(express) {
-console.log(express)
-  }
+    var numeric = "";
+    var num = "1234567890";
+    var operation = "";
+    var extra = "";
+    var match = false;
+    function eval(express) {
+        extra += express
+        for(var i = 0; i < extra.length; i++){
+            for(var j = 0; j < num.length; j++){
+                if(extra[i] == num[j]){
+                    numeric += extra[i]
+                    match = true
+                }
+            }
+        }
+        extra = ""
+        console.log(numeric)
+        // else{
+            //     operation += express
+            //     numeric += "!"
+            // }
+    }
