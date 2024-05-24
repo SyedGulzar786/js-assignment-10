@@ -7,40 +7,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="calculator card">
 
-    <div class="container">
-        <div class="header">Calculator</div>   
-        <input type="text" id="ips" class="result" placeholder="00000000">
-        <div class="first-row">
-            <input type="button" id="del" onclick="" value="Del" class="">
-            <input type="button" id="mod" onclick="eval(mod)" value="%" class="global">
+        <input type="text" id="ips" class="calculator-screen z-depth-1" placeholder="00000000" disabled />
+      
+        <div class="calculator-keys">
+      
+          <button  type="button" class="operator btn btn-info" id="pls" onclick="vOne(pls)" value="+">+</button>
+          <button  type="button" class="operator btn btn-info" id="nus" onclick="vOne(nus)" value="-">-</button>
+          <button  type="button" class="operator btn btn-info" id="mul" onclick="vOne(mul)" value="X">&times;</button>
+          <button  type="button" class="operator btn btn-info" id="ash" onclick="vOne(ash)" value="/">&divide;</button>
+      
+          <button  type="button" id="svn" onclick="vOne(svn)" value="7" class="btn btn-light waves-effect">7</button>
+          <button  type="button" id="eit" onclick="vOne(eit)" value="8" class="btn btn-light waves-effect">8</button>
+          <button  type="button" id="nin" onclick="vOne(nin)" value="9" class="btn btn-light waves-effect">9</button>
+      
+      
+          <button  type="button" id="fur" onclick="vOne(fur)" value="4" class="btn btn-light waves-effect">4</button>
+          <button  type="button" id="fiv" onclick="vOne(fiv)" value="5" class="btn btn-light waves-effect">5</button>
+          <button  type="button" id="six" onclick="vOne(six)" value="6" class="btn btn-light waves-effect">6</button>
+      
+      
+          <button  type="button" id="one" onclick="vOne(one)" value="1" class="btn btn-light waves-effect">1</button>
+          <button  type="button" id="two" onclick="vOne(two)" value="2" class="btn btn-light waves-effect">2</button>
+          <button  type="button" id="tre" onclick="vOne(tre)" value="3" class="btn btn-light waves-effect">3</button>
+      
+      
+          <button  type="button" id="mod" onclick="vOne(mod)" class="decimal function btn btn-secondary" value="%">%</button>
+          <button  type="button" id="ero" onclick="vOne(ero)" value="0" class="btn btn-light waves-effect">0</button>
+          <button  type="button" id="eql" onclick="opera()"   class="all-clear function btn btn-danger btn-sm" value="=">=</button>
+
+          <button  type="button" class="equal-sign operator btn btn-default" id="del" onclick="del()" value="Del">del</button>
+      
         </div>
-    <div class="second-row">                
-        <input type="button" id="svn" onclick="eval(svn)" value="7" class="global">
-        <input type="button" id="eit" onclick="eval(eit)" value="8" class="global">
-        <input type="button" id="nin" onclick="eval(nin)" value="9" class="global">
-        <input type="button" id="ash" onclick="eval(ash)" value="/" class="global">
-    </div>
-    <div class="third-row">
-        <input type="button" id="fur" onclick="eval(fur)" value="4" class="global">
-        <input type="button" id="fiv" onclick="eval(fiv)" value="5" class="global">
-        <input type="button" id="six" onclick="eval(six)" value="6" class="global">
-        <input type="button" id="mul" onclick="eval(mul)" value="X" class="global">
-    </div>
-    <div class="fourth-row">
-        <input type="button" id="one" onclick="eval(one)" value="1" class="global">
-        <input type="button" id="two" onclick="eval(two)" value="2" class="global">
-        <input type="button" id="tre" onclick="eval(tre)" value="3" class="global">
-        <input type="button" id="nus" onclick="eval(nus)" value="-" class="global">
-    </div>
-    <div class="conflict">
-        <div class="left">
-            <input type="button" id="ero" onclick="eval(ero)" value="0" class=" big">
-            <input type="button" id="eql" onclick="" value="=" class=" green white-text big top-margin">
-            <input type="button" id="pls" onclick="eval(pls)" value="+" class="global grey plus">
-        </div>
+        <button  type="button" class="btn clear" id="ac" onclick="clean()" value="ac">AC</button>
       </div>
-    </div>
-    <script src="app.js"></script>
+      <script src="app.js"></script>
 </body>
 </html>
